@@ -44,7 +44,7 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
                     exceptionHandling().and().sessionManagement()
                     .sessionCreationPolicy(SessionCreationPolicy.STATELESS);
            http.addFilterBefore(oncePerRequestFilterImplToAunthenticateJwt, UsernamePasswordAuthenticationFilter.class);
-            //it is used for authorisation of a service...
+            //it is used for authorisation of a service.
         }
 
         @Autowired
