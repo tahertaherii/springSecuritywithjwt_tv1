@@ -1,0 +1,17 @@
+---please connect with post gress with docker
+
+this is the command used for running postgress in local host
+1)docker run -d -i --name postgres_1 -p 5432:5432 -e POSTGRES_PASSWORD="password" postgres:latest
+this is the command to execute postgress
+2)docker exec -it postgres_1 bash;  
+3)psql -U postgres -- this will connect to postgres
+4)\l this will print all the database 
+5)\c test -- this will connnect to our db test 
+---after word you can create and insert value in db using sql commands
+
+6)\d this will list all the tables in db 
+
+7)ctrl+D to come back to docker
+8)docker stop postgres_1
+
+and insert user in it
